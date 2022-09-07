@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>D:\EH_PROJECT_DEPARTMENT\emisor-IR\emisor-IR.kicad_sch</source>
+    <date>05/09/2022 9:37:16</date>
+    <tool>Eeschema (6.0.2)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>emisor-IR.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="D1">
+      <value>LED</value>
+      <footprint>EESTN5:led_5mm_clear</footprint>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="emisor-IR.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a1338d76-5506-43d2-a656-f06f903e7bdc</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>LED</value>
+      <footprint>EESTN5:led_5mm_clear</footprint>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="emisor-IR.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a817d8da-b0a5-4a30-8d35-2f1c58073e1f</tstamps>
+    </comp>
+    <comp ref="H1">
+      <value>Mounting_Hole</value>
+      <footprint>EESTN5:hole_2mm</footprint>
+      <libsource lib="EESTN5" part="Mounting_Hole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="emisor-IR.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>213e4313-acdd-463d-b0ee-72c417ca3458</tstamps>
+    </comp>
+    <comp ref="H2">
+      <value>Mounting_Hole</value>
+      <footprint>EESTN5:hole_2mm</footprint>
+      <libsource lib="EESTN5" part="Mounting_Hole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="emisor-IR.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e587b3f5-4b98-47a5-a20e-c8779f463333</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>Conn_01x03</value>
+      <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="emisor-IR.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>59ffd455-e2a3-45a7-94e8-4af0540e6ca3</tstamps>
+    </comp>
+    <comp ref="Q1">
+      <value>BC548</value>
+      <footprint>Package_TO_SOT_THT:TO-92_Inline</footprint>
+      <datasheet>https://www.onsemi.com/pub/Collateral/BC550-D.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="BC548" description="0.1A Ic, 30V Vce, Small Signal NPN Transistor, TO-92"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="emisor-IR.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>304facc4-c68d-43c2-8ad8-182f62056569</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>R</value>
+      <libsource lib="EESTN5" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="emisor-IR.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2b008f62-a65e-4e59-bfd9-d81689702ec5</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>R</value>
+      <libsource lib="EESTN5" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="emisor-IR.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>41bca582-eb59-4799-bbdc-84ce308dfda2</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector_Generic" part="Conn_01x03">
+      <description>Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x03</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EESTN5" part="Mounting_Hole">
+      <description>Mounting Hole without connection</description>
+      <footprints>
+        <fp>hole*</fp>
+        <fp>Logo*</fp>
+        <fp>PAD*</fp>
+        <fp>Separador*</fp>
+        <fp>Cable*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">Mounting_Hole</field>
+      </fields>
+    </libpart>
+    <libpart lib="EESTN5" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>RES*</fp>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transistor_BJT" part="BC548">
+      <description>0.1A Ic, 30V Vce, Small Signal NPN Transistor, TO-92</description>
+      <docs>https://www.onsemi.com/pub/Collateral/BC550-D.pdf</docs>
+      <footprints>
+        <fp>TO?92*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BC548</field>
+        <field name="Footprint">Package_TO_SOT_THT:TO-92_Inline</field>
+        <field name="Datasheet">https://www.onsemi.com/pub/Collateral/BC550-D.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="C" type="passive"/>
+        <pin num="2" name="B" type="input"/>
+        <pin num="3" name="E" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector_Generic">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+    <library logical="EESTN5">
+      <uri>C:/Librerias-Kicad-master/EESTN5.lib</uri>
+    </library>
+    <library logical="Transistor_BJT">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Transistor_BJT.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Earth">
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="Q1" pin="3" pinfunction="E" pintype="passive"/>
+    </net>
+    <net code="2" name="Net-(J1-Pad2)">
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+    </net>
+    <net code="3" name="Net-(J1-Pad3)">
+      <node ref="J1" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+    </net>
+    <net code="4" name="Net-(Q1-Pad1)">
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="Q1" pin="1" pinfunction="C" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+    </net>
+    <net code="5" name="Net-(Q1-Pad2)">
+      <node ref="Q1" pin="2" pinfunction="B" pintype="input"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+    </net>
+  </nets>
+</export>
