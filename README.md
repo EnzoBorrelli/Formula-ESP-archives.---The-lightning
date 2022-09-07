@@ -1,2 +1,2 @@
 # Formula-ESP-archives.---The-lightning
-to do= a description
+que hacer= descripcion
