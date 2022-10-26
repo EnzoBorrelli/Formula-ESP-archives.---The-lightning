@@ -1,22 +1,22 @@
-#define PIN_MOTOR_IN_1 32
-#define PIN_MOTOR_IN_2 33
-#define PIN_MOTOR_IN_3 26
-#define PIN_MOTOR_IN_4 27
+#define PIN_MOTOR_IN_1 27
+#define PIN_MOTOR_IN_2 26
+#define PIN_MOTOR_IN_3 25
+#define PIN_MOTOR_IN_4 33
 
-const int PWM_MOTOR_IN_1 = 0;
-const int PWM_MOTOR_IN_2 = 1;
-const int PWM_MOTOR_IN_3 = 2;
-const int PWM_MOTOR_IN_4 = 3;
+#define PWM_MOTOR_IN_1 0
+#define PWM_MOTOR_IN_2 1
+#define PWM_MOTOR_IN_3 2
+#define PWM_MOTOR_IN_4 3
 
-const int frecuencia = 10000;
-const int resolucion = 8;
+#define FREQ 10000
+#define RESOLUCION 8
 
 void setup() {
 
-  ledcSetup(PWM_MOTOR_IN_1, frecuencia, resolucion);
-  ledcSetup(PWM_MOTOR_IN_2, frecuencia, resolucion);
-  ledcSetup(PWM_MOTOR_IN_3, frecuencia, resolucion);
-  ledcSetup(PWM_MOTOR_IN_4, frecuencia, resolucion);
+  ledcSetup(PWM_MOTOR_IN_1, FREQ, RESOLUCION);
+  ledcSetup(PWM_MOTOR_IN_2, FREQ, RESOLUCION);
+  ledcSetup(PWM_MOTOR_IN_3, FREQ, RESOLUCION);
+  ledcSetup(PWM_MOTOR_IN_4, FREQ, RESOLUCION);
 
   ledcAttachPin(PIN_MOTOR_IN_1, PWM_MOTOR_IN_1);
   ledcAttachPin(PIN_MOTOR_IN_2, PWM_MOTOR_IN_2);

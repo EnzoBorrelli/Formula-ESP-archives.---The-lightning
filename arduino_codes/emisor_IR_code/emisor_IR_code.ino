@@ -6,7 +6,7 @@ este codigo se debera agregar al codigo principal, verificando lo puesto en los 
                                                            Formula ESP archives- 2022
 */
 // numero del pin del LED
-const int ledPin = 2;  // 2 corresponde a GPIO2
+const int ledPin = 22;  // 2 corresponde a GPIO2
 
 // propiedades PWM
 const int freq = 38000; // frecuencia que usa el receptor

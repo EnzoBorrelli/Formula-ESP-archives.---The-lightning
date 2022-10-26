@@ -5,7 +5,7 @@ este es el codigo del L.T.M. (medidor de tiempo de vuelta)
 */
 
 //corredores (1-250)
-#define RUMBEN 3
+#define HONEY_BADGER 3
 #define TOYO_CARS 9
 #define THE_LIGHTNING 24
 #define DBB_001 25
@@ -97,17 +97,44 @@ public:
   }
 };
 
+class Ultrasonido {
+private:
+#define TRIGGER 32
+#define ECHO 33
+
+  int _distancia;
+  unsigned long _tiempo;
+
+public:
+  Ultrasonido() {
+
+    pinMode(TRIGGER, OUTPUT);
+    pinMode(ECHO, INPUT);
+    digitalWrite(TRIGGER, LOW);
+  }
+  int GetDistancia() {
+    digitalWrite(TRIGGER, HIGH);
+    delayMicroseconds(10);
+    digitalWrite(TRIGGER, LOW);
+    _tiempo = pulseIn(ECHO, HIGH);
+    _distancia = _tiempo / 59;
+    return _distancia;
+  }
+};
+
 Corredor *Toyo_cars = new Corredor(TOYO_CARS);
 Corredor *The_Lightning = new Corredor(THE_LIGHTNING);
 Corredor *dbb_001 = new Corredor(DBB_001);
-Corredor *Rumben = new Corredor(RUMBEN);
+Corredor *Honey_Badger = new Corredor(HONEY_BADGER);
+
+Ultrasonido *Sensor = new Ultrasonido();
 
 void tiempo_corredores(int id) {
   Toyo_cars->tiempos_vueltas(id);
   The_Lightning->tiempos_vueltas(id);
   dbb_001->tiempos_vueltas(id);
-  Rumben->tiempos_vueltas(id);
-  //agregar mqtt 
+  Honey_Badger->tiempos_vueltas(id);
+  //agregar mqtt
 }
 
 void setup() {
@@ -116,7 +143,11 @@ void setup() {
 
 void loop() {
   int dato;
+  int sensor=Sensor->GetDistancia();
+  
   if (Serial.available()) {
     dato = int(Serial.read());
+    Serial.println(dato);
+    Serial.println(sensor);
   }
 }
